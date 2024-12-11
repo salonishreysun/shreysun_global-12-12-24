@@ -1,0 +1,23 @@
+.image-container {
+    border: 5px solid black;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin: 15px; 
+    padding: 15px;/* Add space between boxes */
+}
+
+.image-container:hover {
+    transform: scale(1.05);
+    border-color: #007bff; /* Change border color on hover */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.image-container:hover .image {
+    transform: scale(1.1); /* Zoom effect on the image */
+}

@@ -1,0 +1,68 @@
+.container1{
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.container1 h4{
+    color: rgb(4 70 117);
+    font-weight: 700;
+    font-family: "Roboto Slab", serif;
+    
+    /* border-bottom: 8px dotted rgb(0, 166, 255); /* Add a dotted line under h4 */
+    /* padding-bottom: 8px; /* Adds some space between the text and the line */
+    /* margin-bottom: 16px;  */ 
+} 
+.image img{
+    height: 45vh;
+   
+}
+.image {
+    text-align: center; /* Center the image if needed */
+}
+
+.styled-image {
+    width: 100%;
+    margin-bottom: 20px; /* Adjust the width as needed */
+    max-width: 500px; /* Optional: Limit the image size */
+    border: 9px solid white; /* Solid border around the image */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.5); /* 3D effect */
+    border-radius: 10px; /* Rounded corners (optional) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+
+.box{
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 2px;
+}
+
+.box li{
+    font-weight: 500;
+    color: black;
+    
+}
+ .paragraph{
+    font-weight: 400;
+    font-size: large;
+    color: black;
+    /* font-family: "Roboto Slab"; */
+}
+
+
+h6{
+    
+    color: rgb(4 70 117);
+}
+
+.boxx{
+    margin-bottom: 5px;
+}
+
+
+
+
+
