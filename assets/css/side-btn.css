@@ -1,0 +1,108 @@
+/* Floating Button Common Styles */
+.float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 150px;
+  right: 10px;
+  background-color: #25d366; /* WhatsApp green */
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.295);
+}
+
+.float1 {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 150px;
+  right: 10px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  bottom: 90px;
+  background-color: #123db4; /* Email blue */
+}
+.float1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.075);
+}
+
+.float2 {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 150px;
+  right: 10px;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.103);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  /* bottom: 90px; */
+  bottom: 210px;
+  background-color: #33a0df; /* Phone red */
+}
+.float2:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.089);
+}
+
+/* Icon Styling */
+.float i {
+  font-size: 28px;
+}
+
+/* Blinking Effect */
+.blinking {
+  animation: blinking 1.5s infinite;
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .float,
+  .float1,
+  .float2 {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+}
+
+.bg-primary{
+  background-color: #002a34;
+  color:white;
+}
