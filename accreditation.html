@@ -25,26 +25,10 @@
 	<link rel="stylesheet" href="assets/css/slick-theme.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/side-btn.css">
+	<link rel="stylesheet" href="assets/css/document.css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-<style>
-	 #pdf-viewer {
-            text-align: center;
-        }
-        canvas {
-            border: 1px solid #ccc;
-            margin-bottom: 20px;
-        }
-        .pagination-buttons {
-            text-align: center;
-            margin-top: 10px;
-        }
-        button {
-            padding: 10px 20px;
-            margin: 5px;
-            cursor: pointer;
-        }
-</style>
+
 </head>
 
 <body>
@@ -236,7 +220,8 @@
             <h2>ACCREDITATION</h2>
             
         </div>
-        <div class="ft-goodness-featured-content">
+		<!-- doucment start -->
+        <!-- <div class="ft-goodness-featured-content">
             <div class="row" style="">
                 <div class="col-lg-4 col-md-6 mt-3 image-container" style="text-align: center;">
                     <img src="assets/images/accreditation/1.jpg" alt="Image 1" class="image" 
@@ -282,7 +267,92 @@
 				
             </div>
             
-        </div>
+        </div> -->
+		 <!-- Custom CSS -->
+			<div class="gallery-container">
+				<!-- Gallery Item 1 -->
+				<div class="gallery-item">
+					<img src="assets/images/accreditation/1.jpg" alt="Image 1" data-popup="assets/images/accreditation/1.jpg">
+				</div>
+				<!-- Gallery Item 2 -->
+				<div class="gallery-item">
+					<img src="assets/images/accreditation/DOC INDIAN_page-0001.jpg" alt="Image 2" data-popup="assets/images/accreditation/DOC INDIAN_page-0001.jpg">
+				</div>
+				<!-- Gallery Item 3 -->
+				<div class="gallery-item">
+					<img src="assets/images/accreditation/3.jpg" alt="Image 3" data-popup="assets/images/accreditation/3.jpg">
+				</div>
+				<!-- Gallery Item 4 -->
+				<div class="gallery-item">
+					<img src="assets/images/accreditation/5.jpg" alt="Image 4" data-popup="assets/images/accreditation/5.jpg">
+				</div>
+				<!-- Gallery Item 5 -->
+				<div class="gallery-item">
+					<img src="assets/images/accreditation/COI-SHREYSUN LLP _page-0001.jpg" alt="Image 5" data-popup="assets/images/accreditation/COI-SHREYSUN LLP _page-0001.jpg">
+				</div>
+				<!-- Gallery Item 6 -->
+				<div class="gallery-item">
+					<img src="assets/images/accreditation/SGM COVER PAGE FOR BHARADWAJ VESSEL_page-0001.jpg" alt="Image 5" data-popup="assets/images/accreditation/SGM COVER PAGE FOR BHARADWAJ VESSEL_page-0001.jpg">
+				</div>
+				<!-- Gallery Item 8  -->
+				<div id="pdf-viewer" class="col-lg-6 col-md-6 mt-3 image-container" >
+					
+					<canvas id="pdf-canvas"  style="box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); border: 5px solid rgb(13, 13, 151); border-radius: 8px; width: 100%; max-width: 300px; " >
+				</canvas>
+
+
+					<div class="pagination-buttons">
+						<button id="prev-page">Previous Page</button>
+						<span id="page-info">Page <span id="current-page"></span> of <span id="total-pages"></span></span>
+						<button id="next-page">Next Page</button>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+			
+		
+			<!-- Popup Overlay -->
+			<div class="popup-overlay" id="popup-overlay">
+				<span class="close-btn" id="close-btn">&times;</span>
+				<img src="" alt="Popup Image" id="popup-img">
+			</div>
+		
+			<!-- Custom JavaScript -->
+			<script>
+				document.addEventListener("DOMContentLoaded", () => {
+					const galleryItems = document.querySelectorAll(".gallery-item img");
+					const popupOverlay = document.getElementById("popup-overlay");
+					const popupImg = document.getElementById("popup-img");
+					const closeBtn = document.getElementById("close-btn");
+		
+					// Open Popup
+					galleryItems.forEach(item => {
+						item.addEventListener("click", () => {
+							const imgSrc = item.getAttribute("data-popup");
+							popupImg.setAttribute("src", );
+							popupOverlay.style.display = "flex";
+						});
+					});
+		
+					// Close Popup
+					closeBtn.addEventListener("click", () => {
+						popupOverlay.style.display = "none";
+					});
+		
+					// Close Popup on Clicking Outside the Image
+					popupOverlay.addEventListener("click", (e) => {
+						if (e.target !== popupImg && e.target !== closeBtn) {
+							popupOverlay.style.display = "none";
+						}
+					});
+				});
+			</script>
+		
+		
+		<!--  document end -->
+		  
     </div>
 </section>
 <!-- Start of Video section
@@ -456,23 +526,23 @@
 							</a>
 						</div>
 						<link rel="stylesheet" href="css/side-btn.css">k
-<!-- Start Floating Buttons -->
-<!-- Call Button -->
-<a href="tel:09648483374" class="float2" target="_blank" title="Call Us">
-<i class="fas fa-phone"></i>
-</a>
+                      <!-- Start Floating Buttons -->
+                          <!-- Call Button -->
+                                <a href="tel:09648483374" class="float2" target="_blank" title="Call Us">
+                                <i class="fas fa-phone"></i>
+                                </a>
 
-<!-- WhatsApp Button -->
-<a href="https://api.whatsapp.com/send?phone=+91-8009733276&amp;text=Hi ! How Are You Sir..? 😊." class="float"
-target="_blank" title="Chat on WhatsApp">
-<i class="fab fa-whatsapp"></i>
-</a>
+                     <!-- WhatsApp Button -->
+                       <a href="https://api.whatsapp.com/send?phone=+91-8009733276&amp;text=Hi ! How Are You Sir..? 😊." class="float"
+                         target="_blank" title="Chat on WhatsApp">
+                           <i class="fab fa-whatsapp"></i>
+                             </a>
 
-<!-- Email Button -->
-<a href="mailto:admin@shreysun.com" class="float1" target="_blank" title="Email Us">
-<i class="fas fa-envelope"></i>
-</a>
-<!-- End Floating Buttons -->
+                       <!-- Email Button -->
+                     <a href="mailto:admin@shreysun.com" class="float1" target="_blank" title="Email Us">
+                     <i class="fas fa-envelope"></i>
+                     </a>
+                    <!-- End Floating Buttons -->
 
 
 
